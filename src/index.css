@@ -101,7 +101,8 @@ span {
 
 
 .loading-state,
-.error-state {
+.error-state,
+.default-message {
   color: white;
   font-size: 20px;
   text-align: center;

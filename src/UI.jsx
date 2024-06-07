@@ -43,7 +43,7 @@ export default function UI() {
       </header>
       {loading && <p className='loading-state'>Loading...</p>}
       {error && <p className='error-state'>{error}</p>}
-      {!data.weather && !loading && !error && <p>Please enter a location to get the weather information.</p>}
+      {!data.weather && !loading && !error && <p className='default-message'>Please enter a location to get the weather information.</p>}
       {data.weather && (
         <main>
           <div>
