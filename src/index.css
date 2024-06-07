@@ -89,13 +89,25 @@ span {
 .flex {
   display: flex;
   flex-direction: row;
-  margin: 5px 0px;
-  gap: 15px;
+  margin: 10px 0px;
+  gap: 25px;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
-.loading-state {
+.flex p {
+  font-size: 20px;
+}
+
+
+.loading-state,
+.error-state {
   color: white;
-  font-size: 50px;
+  font-size: 20px;
   text-align: center;
   margin: 1rem 0px;
+}
+
+.error-state {
+  color: tomato;
 }
