@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export default function UI() {
   const [data, setData] = useState({})
-  const [location, setLocation] = useState("")
+  const [location, setLocation] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
@@ -43,6 +43,7 @@ export default function UI() {
       </header>
       {loading && <p className='loading-state'>Loading...</p>}
       {error && <p className='error-state'>{error}</p>}
+      {!data.weather && !loading && !error && <p>Please enter a location to get the weather information.</p>}
       {data.weather && (
         <main>
           <div>
