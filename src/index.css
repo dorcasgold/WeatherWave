@@ -92,3 +92,10 @@ span {
   margin: 5px 0px;
   gap: 15px;
 }
+
+.loading-state {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin: 1rem 0px;
+}

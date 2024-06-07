@@ -4,12 +4,14 @@ import axios from 'axios'
 export default function UI() {
   const [data, setData] = useState({})
   const [location, setLocation] = useState("")
+  const [loading, setLoading] = useState(false)
 
   const API_KEY = '77e910ab95f1c4ed23b028165893dd6d'
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${API_KEY}`
 
   const searchLocation = (event) => {
     if (event.key === 'Enter') {
+      setLoading(true)
       axios.get(url)
         .then((res) => {
           setData(res.data)
@@ -18,6 +20,9 @@ export default function UI() {
         })
         .catch((err) => {
           console.error("Error fetching data: ", err)
+        })
+        .finally(() => {
+          setLoading(false)
         })
     }
   }
@@ -33,6 +38,7 @@ export default function UI() {
           onKeyDown={searchLocation}
         />
       </header>
+      {loading && <p className='loading-state'>Loading...</p>}
       {data.weather && (
         <main>
           <div>
