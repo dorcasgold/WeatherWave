@@ -1,8 +1,17 @@
-# React + Vite
+### **Weather Wave - Weather Web App**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Weather Wave - Weather Web App
 
-Currently, two official plugins are available:
+Weather Wave is a weather application that provides users with current weather conditions and forecasts. The app integrates with the OpenWeatherMap API to deliver accurate and up-to-date weather information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Real-Time Weather Updates:** Get current weather based on your location.
+- **Detailed Forecasts:** View temperature, humidity, and wind speed.
+- **Search Functionality:** Find weather information for different locations.
+- **Responsive Design:** Optimized for all devices.
+
+## Technologies Used
+
+- **Frontend:** ReactJS, Tailwind CSS
+- **API:** OpenWeatherMap API
